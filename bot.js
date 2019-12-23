@@ -17,7 +17,7 @@ client.on ("guildMemberAdd", member => {
 		var role = member.guild.roles.find ("name", "Anwärter");
 		member.addRole (role);
 		
-		member.guild.channels.get(“gamer-lounge”).send("Willkommen")
+		member.guild.channels.get(“gamer lounge”).send("Willkommen")
 	})
     
 })
