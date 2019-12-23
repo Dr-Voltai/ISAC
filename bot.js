@@ -5,14 +5,11 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('guildMemberAdd', member => {
-client.on('message',
-
-member.guild.channels.get('JOIN/LEAVE gamer-lounge').send('Willkommen);
-}
-                                                          
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('pong');
+  	}
 });
-
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
