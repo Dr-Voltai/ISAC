@@ -19,8 +19,6 @@ client.on ("guildMemberAdd", member => {
 		
 		member.guild.channels.get(“gamer lounge”).send("Willkommen")
 	})
-    
-})
 
 
 // THIS  MUST  BE  THIS  WAY
