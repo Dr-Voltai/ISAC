@@ -8,7 +8,10 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
-  	}
+        
+bot.on('guildMemberAdd', member => {
+    member.guild.channels.get('gamer-lounge').send("Willkommen")
+}
 });
 
 
